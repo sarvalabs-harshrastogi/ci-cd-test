@@ -1,0 +1,28 @@
+{
+    "name": "test",
+    "version": "1.0.0",
+    "author": "harsh",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sarvalabs/voyage-passport.git"
+    },
+    "engines": {
+        "node": ">=20",
+        "vscode": "^1.94.0"
+    },
+    "keywords": [
+    ],
+    "bugs": {
+        "url": "https://github.com/sarvalabs/voyage-passport/issues"
+    },
+    "packageManager": "pnpm@9.12.1",
+    "scripts": {
+        "lint:fix": "echo 'linting'",
+    },
+    "dependencies": {
+       
+    },
+    "devDependencies": {
+        
+    }
+}
