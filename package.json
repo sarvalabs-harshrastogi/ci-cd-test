@@ -10,19 +10,14 @@
         "node": ">=20",
         "vscode": "^1.94.0"
     },
-    "keywords": [
-    ],
+    "keywords": [],
     "bugs": {
         "url": "https://github.com/sarvalabs/voyage-passport/issues"
     },
     "packageManager": "pnpm@9.12.1",
     "scripts": {
-        "lint:fix": "echo linting",
+        "lint:fix": "echo linting"
     },
-    "dependencies": {
-       
-    },
-    "devDependencies": {
-        
-    }
+    "dependencies": {},
+    "devDependencies": {}
 }
