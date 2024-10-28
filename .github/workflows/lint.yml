@@ -1,0 +1,30 @@
+name: Lint Check
+
+on:
+    push:
+        branches: [main]
+    pull_request:
+
+jobs:
+    lint-check:
+        name: List code base
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+
+            - name: Action setup
+              uses: pnpm/action-setup@v4
+
+            - name: Setting up Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version-file: ".nvmrc"
+                  cache: pnpm
+
+            - name: Install dependencies
+              run: pnpm install --frozen-lockfile --prefer-offline
+
+            - name: Run linter
+              run: pnpm lint
